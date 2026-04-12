@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Shield, Mail } from "lucide-react";
+import { ArrowRight, Shield, Mail, Linkedin } from "lucide-react";
 
 const FooterCta = () => {
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -23,10 +23,14 @@ const FooterCta = () => {
           <ArrowRight className="ml-2 h-5 w-5" />
         </Button>
 
-        <div className="mt-8 flex items-center justify-center gap-2 text-sm text-text-secondary">
-          <Mail className="h-4 w-4" />
-          <a href="mailto:info@shieldiq.it" className="transition-colors hover:text-electric">
+        <div className="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-text-secondary sm:flex-row sm:gap-6">
+          <a href="mailto:info@shieldiq.it" className="flex items-center gap-2 transition-colors hover:text-electric">
+            <Mail className="h-4 w-4" />
             info@shieldiq.it
+          </a>
+          <a href="https://linkedin.com/in/lucasrizzo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-electric">
+            <Linkedin className="h-4 w-4" />
+            LinkedIn
           </a>
         </div>
 

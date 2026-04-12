@@ -25,9 +25,13 @@ const HeroSection = () => {
             <span className="text-electric">per l'AI Act?</span>
           </h1>
 
-          <p className="mx-auto mb-10 max-w-2xl text-lg leading-relaxed text-text-secondary sm:text-xl">
+          <p className="mx-auto mb-4 max-w-2xl text-lg leading-relaxed text-text-secondary sm:text-xl">
             Dal 2 agosto 2026 ogni azienda italiana che usa strumenti AI è soggetta a sanzioni fino al 7% del fatturato.{" "}
             <span className="font-semibold text-foreground">ShieldIQ ti mette in regola in 48 ore.</span>
+          </p>
+
+          <p className="mx-auto mb-10 max-w-2xl text-sm font-medium text-red-400/90">
+            468 provvedimenti nel 2024. Multe triplicate. La prossima potrebbe essere la tua.
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
