@@ -36,7 +36,7 @@ const FaqSection = () => (
           Domande frequenti
         </h2>
 
-        <Accordion type="single" collapsible className="space-y-3">
+        <Accordion type="single" collapsible defaultValue="faq-0" className="space-y-3">
           {faqs.map((faq, i) => (
             <AccordionItem
               key={i}

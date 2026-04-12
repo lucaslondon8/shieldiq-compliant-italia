@@ -73,7 +73,14 @@ const PricingSection = () => {
               <div className="mb-2">
                 <span className="text-4xl font-extrabold text-foreground">€{plan.audit}</span>
                 <span className="ml-1 text-sm text-text-secondary">/ audit</span>
-              </div>
+        </div>
+
+        <p className="mt-10 text-center text-sm text-text-secondary">
+          Non sai in quale tier rientra la tua azienda?{" "}
+          <button onClick={() => scrollTo("assessment")} className="font-semibold text-electric hover:underline">
+            Fai l'assessment gratuito →
+          </button>
+        </p>
               <p className="mb-6 text-sm text-text-secondary">
                 + €{plan.monitor}/mese per il monitoraggio continuo
               </p>
