@@ -107,6 +107,7 @@ const PricingSection = () => {
             Fai l'assessment gratuito →
           </button>
         </p>
+      </div>
     </section>
   );
 };
