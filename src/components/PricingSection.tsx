@@ -100,7 +100,13 @@ const PricingSection = () => {
             </div>
           ))}
         </div>
-      </div>
+
+        <p className="mt-10 text-center text-sm text-text-secondary">
+          Non sai in quale tier rientra la tua azienda?{" "}
+          <button onClick={() => scrollTo("assessment")} className="font-semibold text-electric hover:underline">
+            Fai l'assessment gratuito →
+          </button>
+        </p>
     </section>
   );
 };
