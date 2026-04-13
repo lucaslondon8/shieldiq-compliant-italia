@@ -19,8 +19,8 @@ const faqs = [
     a: "Monitoraggio continuo delle normative, aggiornamento automatico della documentazione, alert su nuove scadenze e supporto prioritario via email.",
   },
   {
-    q: "Siete disponibili anche fuori dalla Toscana?",
-    a: "Sì, operiamo su tutto il territorio italiano. Il servizio è completamente digitale, quindi la sede della tua azienda non è un limite.",
+    q: "Siete disponibili su tutta Italia?",
+    a: "Sì, lavoriamo con PMI in tutta Italia. Il nostro servizio è 100% digitale: audit, consulenza e monitoraggio avvengono da remoto, indipendentemente dalla sede della tua azienda.",
   },
   {
     q: "Cosa succede se non mi adeguo entro agosto 2026?",
