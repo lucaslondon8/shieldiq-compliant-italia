@@ -14,14 +14,15 @@ const FooterCta = () => {
           Nessun impegno — scopri la tua esposizione reale e ricevi un piano d'azione personalizzato.
         </p>
 
-        <Button
-          size="lg"
-          onClick={() => scrollTo("assessment")}
-          className="gradient-electric glow-electric text-primary-foreground px-10 py-6 text-base font-semibold hover:opacity-90"
-        >
-          Prenota Call Gratuita
-          <ArrowRight className="ml-2 h-5 w-5" />
-        </Button>
+        <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
+          <Button
+            size="lg"
+            className="gradient-electric glow-electric text-primary-foreground px-10 py-6 text-base font-semibold hover:opacity-90"
+          >
+            Prenota Call Gratuita
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </Button>
+        </a>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 text-sm text-text-secondary sm:flex-row sm:gap-6">
           <a href="mailto:info@shieldiq.it" className="flex items-center gap-2 transition-colors hover:text-electric">
