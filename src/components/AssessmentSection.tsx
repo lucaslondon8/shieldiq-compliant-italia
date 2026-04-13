@@ -77,24 +77,35 @@ const AssessmentSection = () => {
   const riskLevel = getRiskLevel(riskScore);
   const RiskIcon = riskLevel.icon;
 
+  const WEBHOOK_URL = "https://hooks.zapier.com/hooks/catch/27207492/u7p92mp/";
+
   const handleLeadSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // ==========================================
-    // WEBHOOK: Replace this URL with your webhook endpoint
-    // e.g. https://hooks.zapier.com/... or https://hook.eu1.make.com/...
-    const WEBHOOK_URL = ""; // <-- INSERT WEBHOOK URL HERE
-    // ==========================================
-    const payload = { ...leadData, answers, riskScore };
-    if (WEBHOOK_URL) {
-      try {
-        await fetch(WEBHOOK_URL, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(payload),
-        });
-      } catch (err) {
-        console.error("Webhook error:", err);
-      }
+    const payload = {
+      nome: leadData.nome,
+      email: leadData.email,
+      nomeAzienda: leadData.azienda,
+      domanda1_dipendenti: answers[0] ?? "",
+      domanda2_fatturato: answers[1] ?? "",
+      domanda3_crm: answers[2] ?? "",
+      domanda4_ai: answers[3] ?? "",
+      domanda5_registro: answers[4] ?? "",
+      domanda6_dpo: answers[5] ?? "",
+      domanda7_fornitori: answers[6] ?? "",
+      domanda8_breach: answers[7] ?? "",
+      riskScore,
+      riskLevel: riskLevel.label,
+      sanctionRange: sanctionRanges[answers[1]] ?? "N/D",
+    };
+    try {
+      await fetch(WEBHOOK_URL, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        mode: "no-cors",
+        body: JSON.stringify(payload),
+      });
+    } catch (err) {
+      console.error("Webhook error:", err);
     }
     setSubmitted(true);
   };
@@ -246,9 +257,9 @@ const AssessmentSection = () => {
           {submitted && (
             <div className="animate-fade-in text-center">
               <CheckCircle2 className="mx-auto mb-4 h-16 w-16 text-green-400" />
-              <h2 className="mb-2 text-2xl font-bold text-foreground">Grazie!</h2>
+              <h2 className="mb-2 text-2xl font-bold text-foreground">Grazie {leadData.nome}!</h2>
               <p className="mb-6 text-text-secondary">
-                Riceverai il report completo nella tua casella email entro 48 ore.
+                Riceverai il tuo report entro 24 ore su {leadData.email}. Nel frattempo, prenota una call gratuita.
               </p>
               <a
                 href="https://calendly.com/shieldiq-info/30min"
