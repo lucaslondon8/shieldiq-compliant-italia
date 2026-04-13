@@ -34,9 +34,11 @@ const Navbar = () => {
               {label}
             </button>
           ))}
-          <Button onClick={() => scrollTo("assessment")} className="gradient-electric text-primary-foreground hover:opacity-90">
-            Prenota Call Gratuita
-          </Button>
+          <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
+            <Button className="gradient-electric text-primary-foreground hover:opacity-90">
+              Prenota Call Gratuita
+            </Button>
+          </a>
         </div>
 
         {/* Mobile toggle */}
@@ -62,9 +64,11 @@ const Navbar = () => {
               {label}
             </button>
           ))}
-          <Button onClick={() => scrollTo("assessment")} className="mt-2 w-full gradient-electric text-primary-foreground">
-            Prenota Call Gratuita
-          </Button>
+          <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
+            <Button className="mt-2 w-full gradient-electric text-primary-foreground">
+              Prenota Call Gratuita
+            </Button>
+          </a>
         </div>
       )}
     </nav>

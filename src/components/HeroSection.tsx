@@ -43,14 +43,15 @@ const HeroSection = () => {
               Scopri il tuo Risk Score
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              onClick={() => scrollTo("footer-cta")}
-              className="border-border bg-transparent px-8 py-6 text-base font-semibold text-foreground hover:bg-secondary"
-            >
-              Prenota Call Gratuita
-            </Button>
+            <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-border bg-transparent px-8 py-6 text-base font-semibold text-foreground hover:bg-secondary"
+              >
+                Prenota Call Gratuita
+              </Button>
+            </a>
           </div>
         </div>
       </div>
