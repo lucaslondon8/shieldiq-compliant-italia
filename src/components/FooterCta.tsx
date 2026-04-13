@@ -29,7 +29,7 @@ const FooterCta = () => {
             <Mail className="h-4 w-4" />
             info@shieldiq.it
           </a>
-          <a href="https://linkedin.com/in/lucasrizzo" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-electric">
+          <a href="https://www.linkedin.com/company/112495085/admin/dashboard/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 transition-colors hover:text-electric">
             <Linkedin className="h-4 w-4" />
             LinkedIn
           </a>
