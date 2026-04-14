@@ -5,6 +5,7 @@ import ComeFunziona from "@/components/ComeFunziona";
 import PricingSection from "@/components/PricingSection";
 import AssessmentSection from "@/components/AssessmentSection";
 import CredenzialiSection from "@/components/CredenzialiSection";
+import TrustBar from "@/components/TrustBar";
 import FaqSection from "@/components/FaqSection";
 import FooterCta from "@/components/FooterCta";
 
@@ -17,6 +18,7 @@ const Index = () => (
     <PricingSection />
     <AssessmentSection />
     <CredenzialiSection />
+    <TrustBar />
     <FaqSection />
     <FooterCta />
   </div>
