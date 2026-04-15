@@ -13,7 +13,8 @@ const CredenzialiSection = () => (
           </div>
           <p className="leading-relaxed text-text-secondary">
             Consulente con background in cybersecurity (CompTIA Security+), advisor per startup AI e PMI italiane, invitato alla{" "}
-            <span className="font-medium text-foreground">House of Lords</span> da Small Business Britain. ShieldIQ nasce dall'osservazione diretta che il{" "}
+            <span className="font-medium text-foreground">House of Lords</span> da Small Business Britain e coinvolto nell'{" "}
+            <span className="font-medium text-foreground">AI Forge Incubator</span> a Londra per expertise e exposure nel settore AI. ShieldIQ nasce dall'osservazione diretta che il{" "}
             <span className="font-semibold text-electric">90% delle PMI italiane</span> è esposto a sanzioni evitabili.
           </p>
         </div>
