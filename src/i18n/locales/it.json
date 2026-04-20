@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "comeFunziona": "Come Funziona",
+    "prezzi": "Prezzi",
+    "credenziali": "Credenziali",
+    "faq": "FAQ",
+    "cta": "Prenota Call Gratuita"
+  },
+  "hero": {
+    "badge": "Normativa AI Act — Deadline: 2 agosto 2026",
+    "title1": "La tua PMI è pronta",
+    "title2": "per l'AI Act?",
+    "subtitle1": "Dal 2 agosto 2026 ogni azienda italiana che usa strumenti AI è soggetta a sanzioni fino al 7% del fatturato.",
+    "subtitle2": "ShieldIQ ti mette in regola in 48 ore.",
+    "warning": "468 provvedimenti nel 2024. Multe triplicate. La prossima potrebbe essere la tua.",
+    "ctaPrimary": "Scopri il tuo Risk Score",
+    "ctaSecondary": "Prenota Call Gratuita"
+  },
+  "footer": {
+    "title": "Prenota la tua call gratuita di 20 minuti",
+    "subtitle": "Nessun impegno — scopri la tua esposizione reale e ricevi un piano d'azione personalizzato.",
+    "cta": "Prenota Call Gratuita",
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "terms": "Termini e Condizioni"
+  },
+  "cookie": {
+    "title": "🍪 Rispettiamo la tua privacy",
+    "description": "Usiamo cookie tecnici essenziali e, con il tuo consenso, cookie di analisi e marketing per migliorare la tua esperienza. Puoi accettare tutti i cookie, rifiutarli o personalizzarli.",
+    "accept": "Accetta tutti",
+    "reject": "Rifiuta tutti",
+    "customize": "Personalizza",
+    "save": "Salva preferenze",
+    "necessary": "Necessari",
+    "necessaryDesc": "Cookie essenziali al funzionamento del sito. Non possono essere disattivati.",
+    "analytics": "Analitici",
+    "analyticsDesc": "Ci aiutano a capire come i visitatori utilizzano il sito.",
+    "marketing": "Marketing",
+    "marketingDesc": "Utilizzati per personalizzare annunci e tracciare conversioni.",
+    "readMore": "Leggi la Cookie Policy"
+  },
+  "legal": {
+    "back": "← Torna alla home",
+    "lastUpdate": "Ultimo aggiornamento",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "La presente Privacy Policy descrive come ShieldIQ raccoglie, utilizza e protegge i dati personali degli utenti del sito, in conformità al Regolamento (UE) 2016/679 (GDPR) e al D.Lgs. 196/2003 (Codice Privacy)."
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "intro": "Questo sito utilizza cookie per garantire il corretto funzionamento e migliorare l'esperienza dell'utente. Di seguito le informazioni sui cookie utilizzati e su come gestire le preferenze."
+    },
+    "terms": {
+      "title": "Termini e Condizioni",
+      "intro": "I presenti Termini e Condizioni regolano l'utilizzo del sito ShieldIQ e dei servizi offerti. Navigando il sito accetti integralmente le presenti condizioni."
+    }
+  }
+}

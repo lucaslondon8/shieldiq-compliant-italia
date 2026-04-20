@@ -1,0 +1,59 @@
+{
+  "nav": {
+    "comeFunziona": "How It Works",
+    "prezzi": "Pricing",
+    "credenziali": "Credentials",
+    "faq": "FAQ",
+    "cta": "Book Free Call"
+  },
+  "hero": {
+    "badge": "EU AI Act — Deadline: August 2, 2026",
+    "title1": "Is your SMB ready",
+    "title2": "for the AI Act?",
+    "subtitle1": "From August 2, 2026, every European company using AI tools faces fines up to 7% of annual revenue.",
+    "subtitle2": "ShieldIQ makes you compliant in 48 hours.",
+    "warning": "468 enforcement actions in 2024. Fines tripled. You could be next.",
+    "ctaPrimary": "Get your Risk Score",
+    "ctaSecondary": "Book Free Call"
+  },
+  "footer": {
+    "title": "Book your free 20-minute call",
+    "subtitle": "No commitment — discover your real exposure and receive a personalized action plan.",
+    "cta": "Book Free Call",
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy",
+    "cookie": "Cookie Policy",
+    "terms": "Terms & Conditions"
+  },
+  "cookie": {
+    "title": "🍪 We respect your privacy",
+    "description": "We use essential technical cookies and, with your consent, analytics and marketing cookies to improve your experience. You can accept all, reject, or customize.",
+    "accept": "Accept all",
+    "reject": "Reject all",
+    "customize": "Customize",
+    "save": "Save preferences",
+    "necessary": "Necessary",
+    "necessaryDesc": "Essential cookies for site functionality. Cannot be disabled.",
+    "analytics": "Analytics",
+    "analyticsDesc": "Help us understand how visitors use the site.",
+    "marketing": "Marketing",
+    "marketingDesc": "Used to personalize ads and track conversions.",
+    "readMore": "Read the Cookie Policy"
+  },
+  "legal": {
+    "back": "← Back to home",
+    "lastUpdate": "Last updated",
+    "privacy": {
+      "title": "Privacy Policy",
+      "intro": "This Privacy Policy describes how ShieldIQ collects, uses and protects personal data of website users, in compliance with EU Regulation 2016/679 (GDPR)."
+    },
+    "cookie": {
+      "title": "Cookie Policy",
+      "intro": "This website uses cookies to ensure proper functioning and improve user experience. Below is information about the cookies used and how to manage preferences."
+    },
+    "terms": {
+      "title": "Terms & Conditions",
+      "intro": "These Terms & Conditions govern the use of the ShieldIQ website and the services offered. By browsing the site you fully accept these conditions."
+    }
+  }
+}
