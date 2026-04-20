@@ -1,17 +1,19 @@
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Shield, Mail, Linkedin } from "lucide-react";
 
 const FooterCta = () => {
-  const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+  const { t } = useTranslation();
 
   return (
     <footer id="footer-cta" className="border-t border-border bg-navy-light py-24">
       <div className="container mx-auto px-4 text-center">
         <h2 className="mb-4 text-3xl font-bold text-foreground sm:text-4xl">
-          Prenota la tua call gratuita di 20 minuti
+          {t("footer.title")}
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-text-secondary">
-          Nessun impegno — scopri la tua esposizione reale e ricevi un piano d'azione personalizzato.
+          {t("footer.subtitle")}
         </p>
 
         <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
@@ -19,7 +21,7 @@ const FooterCta = () => {
             size="lg"
             className="gradient-electric glow-electric text-primary-foreground px-10 py-6 text-base font-semibold hover:opacity-90"
           >
-            Prenota Call Gratuita
+            {t("footer.cta")}
             <ArrowRight className="ml-2 h-5 w-5" />
           </Button>
         </a>
@@ -35,9 +37,24 @@ const FooterCta = () => {
           </a>
         </div>
 
-        <div className="mt-16 flex items-center justify-center gap-2 border-t border-border pt-8 text-xs text-text-secondary">
+        {/* Legal links */}
+        <div className="mt-10 flex flex-wrap items-center justify-center gap-4 text-xs text-text-secondary">
+          <Link to="/privacy-policy" className="transition-colors hover:text-electric">
+            {t("footer.privacy")}
+          </Link>
+          <span className="opacity-30">•</span>
+          <Link to="/cookie-policy" className="transition-colors hover:text-electric">
+            {t("footer.cookie")}
+          </Link>
+          <span className="opacity-30">•</span>
+          <Link to="/termini-condizioni" className="transition-colors hover:text-electric">
+            {t("footer.terms")}
+          </Link>
+        </div>
+
+        <div className="mt-8 flex items-center justify-center gap-2 border-t border-border pt-8 text-xs text-text-secondary">
           <Shield className="h-4 w-4 text-electric" />
-          <span>© {new Date().getFullYear()} ShieldIQ. Tutti i diritti riservati.</span>
+          <span>© {new Date().getFullYear()} ShieldIQ. {t("footer.rights")}</span>
         </div>
       </div>
     </footer>

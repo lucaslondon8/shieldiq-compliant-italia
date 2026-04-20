@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
 const HeroSection = () => {
+  const { t } = useTranslation();
   const scrollTo = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
   };
@@ -17,21 +19,21 @@ const HeroSection = () => {
         <div className="mx-auto max-w-4xl">
           <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-electric/30 bg-electric/10 px-4 py-1.5 text-sm font-medium text-electric">
             <span className="h-2 w-2 rounded-full bg-electric animate-pulse-glow" />
-            Normativa AI Act — Deadline: 2 agosto 2026
+            {t("hero.badge")}
           </div>
 
           <h1 className="mb-6 text-4xl font-extrabold leading-tight tracking-tight text-foreground sm:text-5xl lg:text-7xl">
-            La tua PMI è pronta{" "}
-            <span className="text-electric">per l'AI Act?</span>
+            {t("hero.title1")}{" "}
+            <span className="text-electric">{t("hero.title2")}</span>
           </h1>
 
           <p className="mx-auto mb-4 max-w-2xl text-lg leading-relaxed text-text-secondary sm:text-xl">
-            Dal 2 agosto 2026 ogni azienda italiana che usa strumenti AI è soggetta a sanzioni fino al 7% del fatturato.{" "}
-            <span className="font-semibold text-foreground">ShieldIQ ti mette in regola in 48 ore.</span>
+            {t("hero.subtitle1")}{" "}
+            <span className="font-semibold text-foreground">{t("hero.subtitle2")}</span>
           </p>
 
           <p className="mx-auto mb-10 max-w-2xl text-sm font-medium text-red-400/90">
-            468 provvedimenti nel 2024. Multe triplicate. La prossima potrebbe essere la tua.
+            {t("hero.warning")}
           </p>
 
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -40,7 +42,7 @@ const HeroSection = () => {
               onClick={() => scrollTo("assessment")}
               className="gradient-electric glow-electric text-primary-foreground px-8 py-6 text-base font-semibold hover:opacity-90"
             >
-              Scopri il tuo Risk Score
+              {t("hero.ctaPrimary")}
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
             <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
@@ -49,7 +51,7 @@ const HeroSection = () => {
                 variant="outline"
                 className="border-border bg-transparent px-8 py-6 text-base font-semibold text-foreground hover:bg-secondary"
               >
-                Prenota Call Gratuita
+                {t("hero.ctaSecondary")}
               </Button>
             </a>
           </div>
