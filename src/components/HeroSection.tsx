@@ -32,7 +32,7 @@ const HeroSection = () => {
             <span className="font-semibold text-foreground">{t("hero.subtitle2")}</span>
           </p>
 
-          <p className="mx-auto mb-10 max-w-2xl text-sm font-medium text-red-400/90">
+          <p className="mx-auto mb-10 max-w-2xl text-sm font-medium text-destructive">
             {t("hero.warning")}
           </p>
 

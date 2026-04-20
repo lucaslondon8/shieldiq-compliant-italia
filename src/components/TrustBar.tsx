@@ -26,7 +26,7 @@ const TrustBar = () => (
             key={b.title}
             className="flex flex-col items-center gap-2 rounded-xl border border-border bg-card p-5 text-center transition-colors hover:border-electric/40"
           >
-            <img src={b.image} alt={b.title} className="h-12 w-12 rounded-md object-contain ring-2 ring-white/20 p-0.5 bg-white/10" />
+            <img src={b.image} alt={b.title} className="h-12 w-12 rounded-md object-contain ring-1 ring-border p-0.5 bg-muted" />
             <span className="text-sm font-semibold leading-tight text-foreground">{b.title}</span>
             <span className="text-xs text-text-secondary">{b.subtitle}</span>
           </div>

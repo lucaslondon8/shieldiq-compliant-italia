@@ -3,6 +3,7 @@ import { useTranslation } from "react-i18next";
 import { Shield, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import ThemeToggle from "@/components/ThemeToggle";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -40,6 +41,7 @@ const Navbar = () => {
             </button>
           ))}
           <LanguageSwitcher />
+          <ThemeToggle />
           <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
             <Button className="gradient-electric text-primary-foreground hover:opacity-90">
               {t("nav.cta")}
@@ -65,8 +67,9 @@ const Navbar = () => {
               {label}
             </button>
           ))}
-          <div className="py-3">
+          <div className="py-3 flex items-center gap-2">
             <LanguageSwitcher />
+            <ThemeToggle />
           </div>
           <a href="https://calendly.com/shieldiq-info/30min" target="_blank" rel="noopener noreferrer">
             <Button className="mt-2 w-full gradient-electric text-primary-foreground">
