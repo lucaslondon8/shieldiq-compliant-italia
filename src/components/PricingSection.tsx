@@ -6,10 +6,12 @@ const PricingSection = () => {
   const { t } = useTranslation();
   const scrollTo = (id: string) => document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
 
+  const currency = t("pricing.currency");
+
   const plans = [
-    { name: "PMI Small", range: t("pricing.rangeSmall"), audit: "2.900", monitor: "590", highlight: t("pricing.highlightSmall"), featured: false },
-    { name: "PMI Mid", range: t("pricing.rangeMid"), audit: "4.900", monitor: "990", highlight: t("pricing.highlightMid"), featured: true },
-    { name: "PMI Large", range: t("pricing.rangeLarge"), audit: "9.900", monitor: "1.900", highlight: null as string | null, featured: false },
+    { name: "PMI Small", range: t("pricing.rangeSmall"), audit: t("pricing.smallAudit"), monitor: t("pricing.smallMonitor"), highlight: t("pricing.highlightSmall"), featured: false },
+    { name: "PMI Mid",   range: t("pricing.rangeMid"),   audit: t("pricing.midAudit"),   monitor: t("pricing.midMonitor"),   highlight: t("pricing.highlightMid"),   featured: true },
+    { name: "PMI Large", range: t("pricing.rangeLarge"), audit: t("pricing.largeAudit"), monitor: t("pricing.largeMonitor"), highlight: null as string | null, featured: false },
   ];
   const features = [t("pricing.feature1"), t("pricing.feature2"), t("pricing.feature3"), t("pricing.feature4")];
 
@@ -33,7 +35,7 @@ const PricingSection = () => {
               <p className="mb-6 text-sm text-text-secondary">{plan.range}</p>
 
               <div className="mb-2">
-                <span className="text-4xl font-extrabold text-foreground">€{plan.audit}</span>
+                <span className="text-4xl font-extrabold text-foreground">{currency}{plan.audit}</span>
                 <span className="ml-1 text-sm text-text-secondary">{t("pricing.perAudit")}</span>
               </div>
               <p className="mb-6 text-sm text-text-secondary">{t("pricing.perMonth", { price: plan.monitor })}</p>

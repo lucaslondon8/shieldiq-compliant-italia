@@ -17,9 +17,18 @@
     "ctaSecondary": "Book Free Call"
   },
   "urgency": {
-    "aiAct": { "deadline": "August 2, 2026", "fine": "up to 7% of revenue" },
-    "nis2": { "deadline": "October 31, 2026", "fine": "up to 2% of revenue" },
-    "gdpr": { "deadline": "Active enforcement", "fine": "2024 average: €51,000" },
+    "aiAct": {
+      "deadline": "August 2, 2026",
+      "fine": "up to 7% of revenue"
+    },
+    "nis2": {
+      "deadline": "October 31, 2026",
+      "fine": "up to 2% of revenue"
+    },
+    "gdpr": {
+      "deadline": "Active enforcement",
+      "fine": "2024 average: €51,000"
+    },
     "fineLabel": "Fine:"
   },
   "comeFunziona": {
@@ -44,20 +53,27 @@
   "pricing": {
     "title": "Transparent pricing",
     "subtitle": "No hidden fees. Pay only for what you need.",
-    "rangeSmall": "€2M – €5M revenue",
-    "rangeMid": "€5M – €15M revenue",
-    "rangeLarge": "€15M – €50M revenue",
+    "rangeSmall": "£1.7M – £4.3M revenue",
+    "rangeMid": "£4.3M – £13M revenue",
+    "rangeLarge": "£13M – £43M revenue",
     "highlightSmall": "Less than 10% of the average fine",
     "highlightMid": "Most chosen",
     "perAudit": "/ audit",
-    "perMonth": "+ €{{price}}/month for continuous monitoring",
+    "perMonth": "+ £{{price}}/month for continuous monitoring",
     "feature1": "Complete gap analysis",
     "feature2": "Risk score quantified in €",
     "feature3": "Audit-ready documentation",
     "feature4": "Remediation plan",
     "cta": "Get Started",
     "noTier": "Not sure which tier fits your company?",
-    "freeAssessment": "Take the free assessment →"
+    "freeAssessment": "Take the free assessment →",
+    "currency": "£",
+    "smallAudit": "2,490",
+    "smallMonitor": "510",
+    "midAudit": "4,200",
+    "midMonitor": "850",
+    "largeAudit": "8,490",
+    "largeMonitor": "1,630"
   },
   "assessment": {
     "step": "Question {{current}} of {{total}}",
@@ -165,5 +181,25 @@
       "title": "Terms & Conditions",
       "intro": "These Terms & Conditions govern the use of the ShieldIQ website and the services offered. By browsing the site you fully accept these conditions."
     }
+  },
+  "ukEu": {
+    "badge": "🇬🇧 UK Companies — EU Exposure",
+    "title": "Selling to EU clients? You're still on the hook.",
+    "subtitle": "Brexit didn't end your GDPR, AI Act or NIS2 obligations. If you process EU data or serve EU customers, EU regulators can fine you directly — up to 4% of global revenue (GDPR) or 7% (AI Act).",
+    "card1Title": "EU Customer Data",
+    "card1Desc": "Any UK SaaS, agency or e-commerce processing personal data of EU residents must comply with EU GDPR — separate from UK GDPR.",
+    "card2Title": "AI Act Extraterritoriality",
+    "card2Desc": "If your AI system's output is used in the EU, the AI Act applies. Fines up to €35M or 7% of global turnover.",
+    "card3Title": "NIS2 Supply Chain",
+    "card3Desc": "If you supply digital services to EU essential entities, your client must verify your NIS2 compliance — or replace you.",
+    "offerTitle": "Dual Compliance Package — UK + EU",
+    "offerDesc": "One audit, both jurisdictions covered. We map UK GDPR + EU GDPR overlap, AI Act applicability, and NIS2 supply-chain requirements in a single 48h report.",
+    "offerPrice": "From £3,490",
+    "offerSubprice": "+ £690/month dual-jurisdiction monitoring",
+    "feature1": "UK & EU GDPR gap analysis",
+    "feature2": "EU representative assessment (Art. 27)",
+    "feature3": "AI Act extraterritorial scope review",
+    "feature4": "NIS2 supplier compliance pack",
+    "cta": "Book Free UK-EU Call"
   }
 }
