@@ -8,6 +8,7 @@ import CredenzialiSection from "@/components/CredenzialiSection";
 import TrustBar from "@/components/TrustBar";
 import FaqSection from "@/components/FaqSection";
 import FooterCta from "@/components/FooterCta";
+import UkEuSection from "@/components/UkEuSection";
 
 const sectionWrapper = "mx-4 sm:mx-8 lg:mx-16 my-4 rounded-2xl border border-white/10";
 
@@ -19,6 +20,7 @@ const Index = () => (
     <div className={sectionWrapper}><ComeFunziona /></div>
     <div className={sectionWrapper}><TrustBar /></div>
     <div className={sectionWrapper}><PricingSection /></div>
+      <div className={sectionWrapper}><UkEuSection /></div>
     <div className={sectionWrapper}><AssessmentSection /></div>
     <div className={sectionWrapper}><CredenzialiSection /></div>
     <div className={sectionWrapper}><FaqSection /></div>
