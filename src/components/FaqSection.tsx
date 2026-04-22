@@ -1,60 +1,37 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
+import { useTranslation } from "react-i18next";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
-const faqs = [
-  {
-    q: "Quanto dura l'audit?",
-    a: "Il questionario richiede circa 20 minuti. La nostra AI analizza le risposte e genera il report entro 48 ore dalla compilazione.",
-  },
-  {
-    q: "Devo avere già subito una sanzione?",
-    a: "Assolutamente no. Il nostro servizio è preventivo: ti mettiamo in regola prima che arrivino ispezioni o sanzioni.",
-  },
-  {
-    q: "Cosa include il Monitor mensile?",
-    a: "Monitoraggio continuo delle normative, aggiornamento automatico della documentazione, alert su nuove scadenze e supporto prioritario via email.",
-  },
-  {
-    q: "Siete disponibili su tutta Italia?",
-    a: "Sì, lavoriamo con PMI in tutta Italia. Il nostro servizio è 100% digitale: audit, consulenza e monitoraggio avvengono da remoto, indipendentemente dalla sede della tua azienda.",
-  },
-  {
-    q: "Cosa succede se non mi adeguo entro agosto 2026?",
-    a: "L'AI Act prevede sanzioni fino al 7% del fatturato globale annuo. Oltre alla sanzione economica, rischi il blocco operativo dei sistemi AI non conformi.",
-  },
-];
+const FaqSection = () => {
+  const { t } = useTranslation();
+  const faqs = [
+    { q: t("faq.q1"), a: t("faq.a1") },
+    { q: t("faq.q2"), a: t("faq.a2") },
+    { q: t("faq.q3"), a: t("faq.a3") },
+    { q: t("faq.q4"), a: t("faq.a4") },
+    { q: t("faq.q5"), a: t("faq.a5") },
+  ];
 
-const FaqSection = () => (
-  <section id="faq" className="py-24">
-    <div className="container mx-auto px-4">
-      <div className="mx-auto max-w-2xl">
-        <h2 className="mb-12 text-center text-3xl font-bold text-foreground sm:text-4xl">
-          Domande frequenti
-        </h2>
-
-        <Accordion type="single" collapsible defaultValue="faq-0" className="space-y-3">
-          {faqs.map((faq, i) => (
-            <AccordionItem
-              key={i}
-              value={`faq-${i}`}
-              className="rounded-lg border border-border bg-card px-6 data-[state=open]:border-electric/30"
-            >
-              <AccordionTrigger className="py-5 text-left text-base font-semibold text-foreground hover:no-underline">
-                {faq.q}
-              </AccordionTrigger>
-              <AccordionContent className="pb-5 text-sm leading-relaxed text-text-secondary">
-                {faq.a}
-              </AccordionContent>
-            </AccordionItem>
-          ))}
-        </Accordion>
+  return (
+    <section id="faq" className="py-24">
+      <div className="container mx-auto px-4">
+        <div className="mx-auto max-w-2xl">
+          <h2 className="mb-12 text-center text-3xl font-bold text-foreground sm:text-4xl">{t("faq.title")}</h2>
+          <Accordion type="single" collapsible defaultValue="faq-0" className="space-y-3">
+            {faqs.map((faq, i) => (
+              <AccordionItem key={i} value={`faq-${i}`} className="rounded-lg border border-border bg-card px-6 data-[state=open]:border-electric/30">
+                <AccordionTrigger className="py-5 text-left text-base font-semibold text-foreground hover:no-underline">
+                  {faq.q}
+                </AccordionTrigger>
+                <AccordionContent className="pb-5 text-sm leading-relaxed text-text-secondary">
+                  {faq.a}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default FaqSection;
