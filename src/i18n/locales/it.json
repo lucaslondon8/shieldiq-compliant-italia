@@ -17,9 +17,18 @@
     "ctaSecondary": "Prenota Call Gratuita"
   },
   "urgency": {
-    "aiAct": { "deadline": "2 agosto 2026", "fine": "fino al 7% del fatturato" },
-    "nis2": { "deadline": "31 ottobre 2026", "fine": "fino al 2% del fatturato" },
-    "gdpr": { "deadline": "Enforcement attivo", "fine": "media 2024: €51.000" },
+    "aiAct": {
+      "deadline": "2 agosto 2026",
+      "fine": "fino al 7% del fatturato"
+    },
+    "nis2": {
+      "deadline": "31 ottobre 2026",
+      "fine": "fino al 2% del fatturato"
+    },
+    "gdpr": {
+      "deadline": "Enforcement attivo",
+      "fine": "media 2024: €51.000"
+    },
     "fineLabel": "Sanzione:"
   },
   "comeFunziona": {
@@ -57,7 +66,14 @@
     "feature4": "Piano di remediation",
     "cta": "Inizia Ora",
     "noTier": "Non sai in quale tier rientra la tua azienda?",
-    "freeAssessment": "Fai l'assessment gratuito →"
+    "freeAssessment": "Fai l'assessment gratuito →",
+    "currency": "€",
+    "smallAudit": "2.900",
+    "smallMonitor": "590",
+    "midAudit": "4.900",
+    "midMonitor": "990",
+    "largeAudit": "9.900",
+    "largeMonitor": "1.900"
   },
   "assessment": {
     "step": "Domanda {{current}} di {{total}}",
@@ -165,5 +181,25 @@
       "title": "Termini e Condizioni",
       "intro": "I presenti Termini e Condizioni regolano l'utilizzo del sito ShieldIQ e dei servizi offerti. Navigando il sito accetti integralmente le presenti condizioni."
     }
+  },
+  "ukEu": {
+    "badge": "🇬🇧 Aziende UK — Esposizione UE",
+    "title": "Vendi a clienti UE? Sei ancora soggetto alle normative.",
+    "subtitle": "La Brexit non ha cancellato i tuoi obblighi GDPR, AI Act o NIS2. Se tratti dati UE o servi clienti UE, i regolatori europei possono sanzionarti direttamente.",
+    "card1Title": "Dati clienti UE",
+    "card1Desc": "Qualsiasi SaaS, agenzia o e-commerce UK che tratta dati personali di residenti UE deve rispettare il GDPR UE.",
+    "card2Title": "Extraterritorialità AI Act",
+    "card2Desc": "Se l'output del tuo sistema AI è usato nell'UE, l'AI Act si applica. Sanzioni fino a €35M o 7% del fatturato globale.",
+    "card3Title": "Supply Chain NIS2",
+    "card3Desc": "Se fornisci servizi digitali a entità essenziali UE, il tuo cliente deve verificare la tua conformità NIS2.",
+    "offerTitle": "Dual Compliance Package — UK + UE",
+    "offerDesc": "Un solo audit, entrambe le giurisdizioni. Mappiamo overlap GDPR UK + UE, applicabilità AI Act e requisiti NIS2 in un unico report in 48h.",
+    "offerPrice": "Da £3,490",
+    "offerSubprice": "+ £690/mese monitoraggio dual-jurisdiction",
+    "feature1": "Gap analysis GDPR UK & UE",
+    "feature2": "Valutazione EU representative (Art. 27)",
+    "feature3": "Review scope extraterritoriale AI Act",
+    "feature4": "Pacchetto compliance fornitori NIS2",
+    "cta": "Prenota Call UK-UE Gratuita"
   }
 }
