@@ -9,11 +9,10 @@ const PricingSection = () => {
   const currency = t("pricing.currency");
 
   const plans = [
-    { name: "PMI Small", range: t("pricing.rangeSmall"), audit: t("pricing.smallAudit"), monitor: t("pricing.smallMonitor"), highlight: t("pricing.highlightSmall"), featured: false },
-    { name: "PMI Mid",   range: t("pricing.rangeMid"),   audit: t("pricing.midAudit"),   monitor: t("pricing.midMonitor"),   highlight: t("pricing.highlightMid"),   featured: true },
-    { name: "PMI Large", range: t("pricing.rangeLarge"), audit: t("pricing.largeAudit"), monitor: t("pricing.largeMonitor"), highlight: null as string | null, featured: false },
+    { name: "PMI Small", range: t("pricing.rangeSmall"), audit: t("pricing.smallAudit"), monitor: t("pricing.smallMonitor"), highlight: t("pricing.highlightSmall"), featured: false, features: [t("pricing.feature1"), t("pricing.feature2"), t("pricing.feature3"), t("pricing.feature4")] },
+    { name: "PMI Mid",   range: t("pricing.rangeMid"),   audit: t("pricing.midAudit"),   monitor: t("pricing.midMonitor"),   highlight: t("pricing.highlightMid"),   featured: true,  features: [t("pricing.feature1"), t("pricing.feature2"), t("pricing.feature3"), t("pricing.feature4"), t("pricing.feature5"), t("pricing.feature6")] },
+    { name: "PMI Large", range: t("pricing.rangeLarge"), audit: t("pricing.largeAudit"), monitor: t("pricing.largeMonitor"), highlight: t("pricing.highlightLarge"), featured: false, features: [t("pricing.feature1"), t("pricing.feature2"), t("pricing.feature3"), t("pricing.feature4"), t("pricing.feature5"), t("pricing.feature6"), t("pricing.feature7"), t("pricing.feature8")] },
   ];
-  const features = [t("pricing.feature1"), t("pricing.feature2"), t("pricing.feature3"), t("pricing.feature4")];
 
   return (
     <section id="pricing" className="py-24 bg-navy-light">
@@ -41,7 +40,7 @@ const PricingSection = () => {
               <p className="mb-6 text-sm text-text-secondary">{t("pricing.perMonth", { price: plan.monitor })}</p>
 
               <ul className="mb-8 flex-1 space-y-3">
-                {features.map((f) => (
+                {plan.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm text-text-secondary">
                     <Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-electric" />
                     {f}
